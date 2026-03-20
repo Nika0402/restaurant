@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfroChic - Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">AfroChic</div>
+
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserver.html">Réserver</a>
+        <a href="commander.html">Commander</a>
+        <a href="contact.html">Contact</a>
+         <a href="https://wa.me/2290143500250?text=Bonjour%20je%20veux%20commander%20un%20plat" 
+        target="_blank">Contactez-nous sur WhatsApp</a>
+      </nav>
+
+      <div class="login">
+        <a href="login.html">Connexion</a>
+      </div>
+    </header>
+
+    <section class="menu-container">
+      <div class="categories">
+        <h2>Nos Catégories</h2>
+        <ul>
+          <li data-cat="petitdej" onclick="filtrer('petitdej')">Petit déjeuner</li>
+          <li data-cat="dejeuner" onclick="filtrer('dejeuner')">Déjeuner</li>
+          <li data-cat="dessert" onclick="filtrer('dessert')">Dessert</li>
+          <li data-cat="boisson" onclick="filtrer('boisson')">Boisson</li>
+        </ul>
+      </div>
+
+      <div class="plats">
+        <div class="plat petitdej">
+          <img src="img1.jpg" alt="Café et croissant" />
+          <h3>Café + Croissant</h3>
+          <p>Petit déjeuner léger</p>
+          <span class="prix">3500</span>
+          <div class="actions">
+            <a href="commander.html?plat=Cafe%20et%20Croissant&prix=3500"><button>Commander</button></a>
+          </div>
+        </div>
+
+        <div class="plat petitdej">
+          <img src="img2.jpg" alt="Omelette et pain" />
+          <h3>Omelette + Pain</h3>
+          <p>Petit déjeuner complet</p>
+          <span class="prix">3800</span>
+          <div class="actions">
+            <a href="commander.html?plat=Omelette%20et%20Pain&prix=3800"><button>Commander</button></a>
+          </div>
+        </div>
+
+        <div class="plat dejeuner">
+          <img src="img3.jpg" alt="Poulet Yassa" />
+          <h3>Poulet Yassa</h3>
+          <p>Poulet mariné africain</p>
+          <span class="prix">4500</span>
+          <div class="actions">
+            <a href="commander.html?plat=Poulet%20Yassa&prix=4500"><button>Commander</button></a>
+          </div>
+        </div>
+
+        <div class="plat dejeuner">
+          <img src="img4.jpg" alt="Thieboudienne" />
+          <h3>Thieboudienne</h3>
+          <p>Riz sénégalais traditionnel</p>
+          <span class="prix">5000</span>
+          <div class="actions">
+            <a href="commander.html?plat=Thieboudienne&prix=5000"><button>Commander</button></a>
+          </div>
+        </div>
+
+        <div class="plat dessert">
+          <img src="img5.jpg" alt="Glace vanille" />
+          <h3>Glace vanille</h3>
+          <p>Dessert frais</p>
+          <span class="prix">2500</span>
+          <div class="actions">
+            <a href="commander.html?plat=Glace%20vanille&prix=2500"><button>Commander</button></a>
+          </div>
+        </div>
+
+        <div class="plat boisson">
+          <img src="img5.jpg" alt="Jus de Bissap" />
+          <h3>Jus de Bissap</h3>
+          <p>Boisson africaine</p>
+          <span class="prix">1500</span>
+          <div class="actions">
+            <a href="commander.html?plat=Jus%20de%20Bissap&prix=1500"><button>Commander</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 AfroChic - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>

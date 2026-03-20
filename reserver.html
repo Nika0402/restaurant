@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AfroChic - Réserver</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-reservation">
+  <header class="header">
+    <div class="logo">AfroChic</div>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="menu.html">Menu</a>
+      <a href="reserver.html" class="active">Réserver</a>
+      <a href="commander.html">Commander</a>
+      <a href="contact.html">Contact</a>
+       <a href="https://wa.me/2290143500250?text=Bonjour%20je%20veux%20commander%20un%20plat" 
+        target="_blank">Contactez-nous sur WhatsApp</a>
+    </nav>
+    <div class="login"><a href="login.html">Connexion</a></div>
+  </header>
+
+  <section class="reservation-hero">
+    <div class="reservation-box">
+      <h1>Réservez votre table</h1>
+      <p>Rooftop ou salle chic : choisissez l'ambiance qui vous convient.</p>
+      <form class="reservation-form">
+        <div class="form-row">
+          <label>Nom complet</label>
+          <input type="text" placeholder="Votre nom" required />
+        </div>
+        <div class="form-row">
+          <label>Téléphone</label>
+          <input type="tel" placeholder="+229..." required />
+        </div>
+        <div class="form-row two">
+          <div>
+            <label>Date</label>
+            <input type="date" required />
+          </div>
+          <div>
+            <label>Heure</label>
+            <input type="time" required />
+          </div>
+        </div>
+        <div class="form-row two">
+          <div>
+            <label>Personnes</label>
+            <input type="number" min="1" value="2" />
+          </div>
+          <div>
+            <label>Espace</label>
+            <select>
+              <option>Rooftop</option>
+              <option>Salle climatisée</option>
+              <option>Terrasse</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Notes</label>
+          <textarea placeholder="Allergies, occasion spéciale..."></textarea>
+        </div>
+        <button type="submit">Valider la réservation</button>
+      </form>
+    </div>
+  </section>
+  
+   <footer>
+      <p>&copy; 2026 AfroChic - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
+

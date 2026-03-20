@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfroChic - Commander</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-commande">
+    <header class="header">
+      <div class="logo">AfroChic</div>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserver.html">Réserver</a>
+        <a href="commander.html" class="active">Commander</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://wa.me/2290143500250?text=Bonjour%20je%20veux%20commander%20un%20plat" 
+        target="_blank">Contactez-nous sur WhatsApp</a>
+      </nav>
+      <div class="login">
+        <a href="login.html">Connexion</a>
+      </div>
+    </header>
+
+    <section class="bandeau-commande">
+      <div class="texte-commande">
+        <p class="surtitre">Commande rapide</p>
+        <h1 id="orderTitle">Choisissez votre plat</h1>
+        <p class="sub">Confirmez, ajoutez, et revenez au menu pour continuer vos envies.</p>
+      </div>
+    </section>
+
+    <section class="zone-commande">
+      <div class="carte-commande">
+        <div class="tete-commande">
+          <div>
+            <p class="surtitre">Votre sélection</p>
+            <h2 id="nomPlat">Plat</h2>
+          </div>
+          <span class="pastille-prix" id="prixUnit">0 FCFA</span>
+        </div>
+
+        <div class="corps-commande">
+          <label for="qty">Quantité</label>
+          <div class="ligne-quantite">
+            <input id="qty" type="number" min="1" value="1" />
+            <div class="bloc-total">
+              <span>Total</span>
+              <strong id="totalPrix">0 FCFA</strong>
+            </div>
+          </div>
+
+          <label for="notes">Notes (optionnel)</label>
+          <textarea id="notes" placeholder="Ex: moins de piment, sauce à part..."></textarea>
+        </div>
+
+        <div class="actions-commande">
+          <a class="lien-retour" href="menu.html">⬅ Retour au menu</a>
+          <button id="btnAdd">Ajouter</button>
+        </div>
+      </div>
+
+      <div class="panier">
+        <div class="tete-commande">
+          <div>
+            <p class="surtitre">Panier</p>
+            <h2>Articles sélectionnés</h2>
+          </div>
+          <span class="pastille-prix" id="totalPanier">0 FCFA</span>
+        </div>
+        <ul class="liste-panier" id="listePanier">
+          <li class="item-vide">Votre panier est vide.</li>
+        </ul>
+        <div class="bloc-paiement">
+          <label for="modePaiement">Mode de paiement</label>
+          <select id="modePaiement">
+            <option value="momo">Mobile Money</option>
+            <option value="carte">Carte bancaire</option>
+            <option value="cash">Payer à la livraison</option>
+          </select>
+          <button id="btnPayer">Payer maintenant</button>
+          <a class="lien-retour" href="https://wa.me/2290143500250?text=Bonjour%20je%20veux%20commander%20un%20plat" target="_blank">Commander sur WhatsApp</a>
+        </div>
+        <div class="actions-commande">
+          <a class="lien-retour" href="menu.html">⬅ Continuer les choix</a>
+          <button id="btnVider">Vider le panier</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="alerte-panier" id="toast" aria-live="polite">Ajouté au panier</div>
+
+    <script src="script.js"></script>
+
+     <footer>
+      <p>&copy; 2026 AfroChic - Tous droits réservés</p>
+    </footer>
+  </body>
+</html>
